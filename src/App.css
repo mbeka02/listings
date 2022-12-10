@@ -113,7 +113,8 @@ p {
   flex-direction: column;
   align-items: center;
 
-  background-image: url("./images/bg-header-desktop.svg");
+  background-image: url("./assets/bg-header-desktop.svg");
+
   background-position: center;
   background-size: cover;
   height: 20vh;

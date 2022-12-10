@@ -17,23 +17,26 @@ export default function Listings({
   level,
   handleClick,
 }) {
-  const [icon, setIcon] = useState("");
+  // const [icon, setIcon] = useState("");
   let keywords = [role, level, ...languages, ...tools];
   //dynamic import
-  const handleImport = () => {
-    const svglogo = import(/* @vite-ignore */ logo).then((data) =>
+
+  /* const handleImport = () => {
+    const svglogo = import( @vite-ignore  logo).then((data) =>
       setIcon(data.default)
     );
-  };
+     console.log(logo);
+  } 
   //Runs function on page render.
   useEffect(() => {
     handleImport();
-  }, []);
+  }, []);*/
 
   return (
     <div className={`listing-card ${vnew && "highlight"}`}>
       <div className="flex">
-        <img src={icon} alt="logo" className="logo" />
+        <img src={logo} alt="logo" className="logo" />
+
         <div className="grid card-container">
           <div className="flex card-container1">
             <p className="company-title">{company}</p>

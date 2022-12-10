@@ -1,4 +1,5 @@
-import closeIcon from "../images/icon-remove.svg";
+import closeIcon from "/images/icon-remove.svg";
+
 export default function Nav({ keywords, deleteKeyword, deleteAllKeywords }) {
   return (
     <nav className="navbar">
