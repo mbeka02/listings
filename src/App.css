@@ -16,7 +16,7 @@ p {
 .listings {
   display: grid;
   gap: 6rem;
-  justify-content: center;
+
   margin-top: 3rem;
 }
 /*Listing card*/
@@ -29,6 +29,8 @@ p {
   gap: 1rem;
   padding: 1.5rem;
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin-inline: 2rem;
 }
 .grid {
   display: grid;
@@ -129,9 +131,10 @@ p {
   border-radius: 6px;
   padding: 2rem 1.5rem 2rem 1.5rem;
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.1);
-  width: 60%;
+  width: 90%;
   position: absolute;
   top: 75%;
+  left: 2%;
 }
 .filtered--wrapper {
   display: flex;
@@ -199,8 +202,9 @@ p {
   }
 
   .listings {
-    align-items: center;
+    justify-content: center;
     margin: 1rem;
+    margin-top: 3rem;
   }
   .position {
     color: black;
